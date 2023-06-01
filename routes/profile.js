@@ -1,20 +1,28 @@
 const {Router} = require('express')
-// const fire = require("../database/db")
+require('dotenv').config()
 const router = Router()
 const User = require('../models/users').User
+const jwt = require('jsonwebtoken')
+const { authJwt } = require('../middleware/middleware')
 // const db = fire.firestore()
 
-router.get('/', async (req, res) => {
-    let allData = []
+router.get('/', [authJwt], async (req, res) => {
+    // const authHeader = req.headers['authorization']
+    // const token = authHeader && authHeader.split(' ')[1]
+
+    // if (token == null) return res.sendStatus(401)
+    // console.log(req.response)
    
     try {
+        // const status = jwt.verify(token, process.env.JWT_SECRET)
         const result = await User.findAll()
         res.status(200).json({result})
     } catch (error) {
         res.status(400).json({msg: error})
     }
 })
-router.get('/:id', async (req, res) => {
+
+router.get('/:id', [authJwt], async (req, res) => {
     const {id} = req.params
     console.log(id)
     // res.send(id)
@@ -30,7 +38,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', [authJwt], async (req, res) => {
     const {id} = req.params
     const {nama, email, password} = req.body
     console.log(nama)
