@@ -1,3 +1,18 @@
+# **Capstone Bangkit APP MY FLIGHT**
+
+| Name   | ID | University |
+| :------------ |:---------------:| ------:|
+| Muhammad Rizal Zuhdi    | (ML) M151DSX2521 |Brawijaya University|
+|  Laila Nur Azizah    | (ML) M151DSY2367  |Brawijaya University|
+| Intan Murni Yunika   | (ML) M017DSY3717 | Bandung Institute of Technology (ITB)|
+| Sharira Saniane      | (CC) C038DSY0763 | Sepuluh Nopember Institute of Technology (ITS)|
+| Salsabila Briliana Ananda Sofi    | (CC) C038DSY0851 | Sepuluh Nopember Institute of Technology (ITS)|
+|  Audry Jesica Putri    | (MD) A360DSY1032  |Telkom University|
+<br/>
+
+
+
+
 # My-Flight
 My flight application is an application that will make it easier for flight service users because one of its main features is to provide information about departure delays in real-time. My flight also has features such as flight schedules, aircraft trackers, and other information.
 
