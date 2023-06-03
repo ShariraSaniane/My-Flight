@@ -60,7 +60,6 @@ My flight application is an application that will make it easier for flight serv
 **Response** :
 ```JSON
 {
- 
-    ...
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1hIjoiTG9yZW0gaXBzdW0iLCJlbWFpbCI6InRlczJAZ21haWwuY29tIiwiaWF0IjoxNjg1NzY2MzQ3LCJleHAiOjE2ODU3NzcxNDd9.rZT5Nqs8UzdZpW4IL8DBfvktsWyyasenJ5al2gqlOIw"
 }
 ```
